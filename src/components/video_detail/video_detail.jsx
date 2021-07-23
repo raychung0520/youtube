@@ -7,14 +7,15 @@ const VideoDetail = ({ video }) => (
       className={styles.video}
       type="text/html"
       width="100%"
+      title="youtube vide player"
       height="500px"
       src={`https://www.youtube.com/embed/${video.id}`}
-      framborder="0"
+      framorder="0"
       allowFullScreen
     ></iframe>
     <h2>{video.snippet.title}</h2>
     <h3>{video.snippet.channelTitle}</h3>
-    <p class={styles.description}>{video.snippet.description}</p>
+    <p className={styles.description}>{video.snippet.description}</p>
   </section>
 );
 
